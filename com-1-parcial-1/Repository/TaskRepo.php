@@ -42,10 +42,7 @@ class taskRepo
         private function SaveData()
         {
             $arrayToEncode = array();
-            /*private $tittle;
-            private $date;
-            private $description;
-            private $reminder;*/
+         
             foreach($this->taskList as $task)
             {
                 $valueArray['title'] = $task->getTitle();
@@ -72,10 +69,7 @@ class taskRepo
 
                 foreach($arrayToDecode as $valueArray)
                 {
-                   /*private $tittle;
-            private $date;
-            private $description;
-            private $reminder;*/
+                 
                     $task = new Task();
                     $task->setTitle($valueArray['title']);
                     $task->setDate($valueArray['date']);
