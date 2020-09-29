@@ -47,3 +47,5 @@ $UArray=$URepo->getAll();
         include ('index.php');
     }
 require 'footer.php';
+
+?>
